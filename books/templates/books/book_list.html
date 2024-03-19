@@ -29,7 +29,7 @@
         }
         li {
             background-color: #f9f9f9;
-            padding: 10px;
+            padding: 0px;
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -63,6 +63,9 @@
         .btn:hover {
             background-color: #0056b3;
         }
+        h3{
+            color:Blue;
+        }
     </style>
 
 </head>
@@ -70,13 +73,13 @@
     <div class="container">
         <h1>Book List</h1>
         <div class="btn-container">
-            <a href="{% url 'book_add' %}" class="btn">Add Book</a>
-            <!-- Replace 'pk=1' with the appropriate primary key if needed -->
-            <a href="{% url 'book_update' pk=1 %}" class="btn">Update Book</a>
-            <a href="{% url 'book_delete' pk=1 %}" class="btn">Delete Book</a>
+            <a href="{% url 'book_login' %}" class="btn">Login</a>
+            <a href="{% url 'book_registration'%}" class="btn">Registration</a>
         </div>
+        
         <ul>
-            {% for book in books %}
+                <li><h3>Present Book List</h3></li>
+            {% for book in book_list %}
                 <li>
                     <p class="book-info">{{ book.title }} by {{ book.author }}</p>
                     <p class="genre">Genre: {{ book.genre }}</p>

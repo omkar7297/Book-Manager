@@ -1,0 +1,187 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Edit, Add, and Delete Book forms */
+.edit-book-form,
+.add-book-form,
+.delete-book-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.edit-book-form label,
+.add-book-form label,
+.delete-book-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-book-form input[type="text"],
+.edit-book-form input[type="date"],
+.add-book-form input[type="text"],
+.add-book-form input[type="date"],
+.delete-book-form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-book-form button[type="submit"],
+.add-book-form button[type="submit"],
+.delete-book-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Registration Form */
+.registration-form {
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.registration-form .container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.registration-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registration-form form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.registration-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 13px;
+}
+
+.registration-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.registration-form .btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registration-form .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.registration-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Book List */
+.book-list {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.book-list .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.book-list li {
+    background-color: #f9f9f9;
+    padding: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-list .book-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-list .genre {
+    font-size: 14px;
+    color: #666;
+}

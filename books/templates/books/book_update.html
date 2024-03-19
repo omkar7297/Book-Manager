@@ -15,7 +15,7 @@
             margin-top: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
@@ -86,9 +86,9 @@
         </form>
         <div class="container">
             <div class="btn-container">
+                <a href="{% url 'book_list' %}"class="btn">Book List</a>
                 <a href="{% url 'book_add' %}" class="btn">Add Book</a>
                 <!-- Replace 'pk=1' with the appropriate primary key if needed -->
-                <a href="{% url 'book_update' pk=1 %}" class="btn">Update Book</a>
                 <a href="{% url 'book_delete' pk=1 %}" class="btn">Delete Book</a>
             </div>
         </div>
